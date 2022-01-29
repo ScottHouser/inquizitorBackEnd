@@ -1,0 +1,80 @@
+const allGamesState = {
+    'ABCD':{//lobbyID
+        stageOfTheGame:0,
+        directionsToPlayersTakeAction:'write an answer',
+        directionsToPlayersAfterAction:'Wait for other players to answer',
+        players:[
+            {
+                playerID:'abcd', 
+                playerName:'Scott',
+                isImpostor: false,
+            },
+            {
+                playerID:'wxyz', 
+                playerName:'Marcus',
+                isImpostor: false,
+            },
+            {
+                playerID:'lmao', 
+                playerName:'Ben',
+                isImpostor: true,
+            },
+        ],
+
+        playersAnswers:[
+            {
+                questionNumber: 1,
+                question:'Who was the first president',
+                answer: 'George Washington',
+                playerAnswers: [
+                    {
+                        playerID:'abcd', 
+                        answer:'Thomas Jefferson'
+                    },
+                    {
+                        playerID:'wxyz', 
+                        answer:'George Washington'
+                    },
+                    {
+                        playerID:'lmao', 
+                        answer:'George Washington'
+                    },
+                ]
+            },
+            {
+                questionNumber: 2,
+                question:'What is your favorite color',
+                answer: 'George Washington',
+                playerAnswers: [
+                    {
+                        playerID:'abcd', 
+                        answer:'bananna'
+                    },
+                    {
+                        playerID:'wxyz', 
+                        answer:'red'
+                    },
+                    {
+                        playerID:'lmao', 
+                        answer:'blue'
+                    },
+                ]
+            }
+        ],
+
+        playerVotes: [
+            {
+                voteFor:'abcd',
+                voteBy: 'lmao'
+            },
+            {
+                voteFor:'abcd',
+                voteBy: 'lmao'
+            },
+            {
+                voteFor:'abcd',
+                voteBy: 'lmao'
+            },
+        ]
+    }
+}
